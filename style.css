@@ -464,9 +464,10 @@ img {
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
+  padding: 0 24px;
 }
 .head {
-  height: 90vh;
+  height: auto;
   align-content: center;
   align-items: center;
   justify-content: center;
@@ -481,9 +482,9 @@ img {
 }
 .head .frame {
   width: 400px;
-  height: 450px;
+  height: 500px;
   float: left;
-  margin-top: 35px;
+  margin-top: 46px;
   margin-right: 2rem;
   object-fit: cover;
   transition: 0.8s ease all;
@@ -589,12 +590,12 @@ img {
 }
 .head .content {
   margin-bottom: 40px;
-  text-wrap: wrap;
-  flex-wrap: wrap;
-  overflow-wrap: break-word;
   margin-right: 2rem;
+  padding-left: 450px;
+  overflow-wrap: break-word;
 }
 .head .content h1 {
+  font-weight: 500;
   margin-top: 50px;
   font-size: 3rem;
   color: var(--secondary);
@@ -605,6 +606,7 @@ img {
 .btns {
   display: flex;
   margin-bottom: 25px;
+  justify-content: center;
 }
 .button {
   color: var(--secondary);
@@ -701,9 +703,6 @@ img {
     -ms-transform: rotate(25deg) translate(0px, 0px);
     -o-transform: rotate(25deg) translate(0px, 0px);
   }
-}
-.see {
-  margin-left: 500px;
 }
 .collab {
   margin-left: 20px;
@@ -952,22 +951,50 @@ img {
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
   }
+  .head .frame {
+    float: none;
+    margin-top: 46px;
+    margin-right: auto;
+    margin-left: auto;
+    width: auto;
+    background-image: url(images/model.webp);
+    background-size: cover;
+    background-position: center;
+  }
+  .head .frame:hover {
+    pointer-events: none;
+  }
+  .head .frame::before {
+    pointer-events: none;
+  }
+  .head .frame::after {
+    pointer-events: none;
+  }
+
+  .head .content {
+    margin-bottom: 40px;
+    margin-right: 0px;
+    padding-left: 0px;
+    overflow-wrap: break-word;
+  }
+  .head .content h1 {
+    text-align: center;
+  }
   .card::before {
-    display: none;
+    pointer-events: none;
   }
   .card-content h3 {
     font-size: 10px;
   }
-  /* CONTACT */
   .contact-con .con-card {
     width: 250px;
     height: 350px;
   }
   .contact-con .con-card::before {
-    display: none;
+    pointer-events: none;
   }
   .contact-con .con-card:hover::before {
-    display: none;
+    pointer-events: none;
   }
   .con-card svg {
     width: 96px;
@@ -983,6 +1010,9 @@ img {
     animation: showey 1s linear infinite;
     -webkit-animation: showey 1s linear infinite;
   }
+  .contact-con h1 {
+    pointer-events: none;
+  }
 }
 @media screen and (max-width: 464px) {
   .banner .slider {
@@ -996,8 +1026,53 @@ img {
   .banner .content h2 {
     font-size: 2em;
   }
-  /* CONTACT */
-
+  .head .frame {
+    float: none;
+    margin-top: 46px;
+    margin-right: auto;
+    margin-left: auto;
+    width: auto;
+    background-image: url(images/model.webp);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+  }
+  .head .content h1 {
+    font-size: 1.5rem;
+    text-wrap: nowrap;
+  }
+  .btns {
+    flex-direction: column;
+  }
+  .button {
+    width: 90%;
+    height: 90%;
+    text-align: center;
+  }
+  .see {
+    margin: 0 auto 24px auto;
+  }
+  .collab {
+    margin: 0 auto;
+  }
+  .button:active {
+    pointer-events: none;
+  }
+  .button:hover {
+    pointer-events: none;
+  }
+  .button:hover::before {
+    pointer-events: none;
+  }
+  .see::before {
+    pointer-events: none;
+  }
+  .collab::before {
+    pointer-events: none;
+  }
+  .contact-con {
+    height: 75vh;
+  }
   .contact-con .con-card {
     width: 175px;
     height: 275px;
