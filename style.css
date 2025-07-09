@@ -645,7 +645,7 @@ img {
   -ms-transform: scale(0.9);
   -o-transform: scale(0.9);
 }
-.see::before {
+.stat::before {
   content: "";
   position: absolute;
   top: -190%;
@@ -703,6 +703,9 @@ img {
     -ms-transform: rotate(25deg) translate(0px, 0px);
     -o-transform: rotate(25deg) translate(0px, 0px);
   }
+}
+.stat {
+  margin-left: 50px;
 }
 .collab {
   margin-left: 20px;
@@ -1047,7 +1050,7 @@ img {
     text-align: center;
     pointer-events: none;
   }
-  .see {
+  .stat {
     margin: 0 auto 24px auto;
   }
   .collab {
