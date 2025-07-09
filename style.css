@@ -521,7 +521,7 @@ img {
   position: absolute;
   height: 200%;
   width: 40px;
-  top: -500px;
+  top: -540px;
   background-color: #ffffff33;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
@@ -915,7 +915,6 @@ img {
   .card-content h3 {
     font-size: 12px;
   }
-  /* CONACT */
   .contact-con h1::before {
     font-size: 11rem;
     top: -70px;
@@ -960,6 +959,8 @@ img {
     background-image: url(images/model.webp);
     background-size: cover;
     background-position: center;
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
   }
   .head .frame:hover {
     pointer-events: none;
@@ -968,7 +969,7 @@ img {
     pointer-events: none;
   }
   .head .frame::after {
-    pointer-events: none;
+    display: none;
   }
 
   .head .content {
@@ -1027,14 +1028,6 @@ img {
     font-size: 2em;
   }
   .head .frame {
-    float: none;
-    margin-top: 46px;
-    margin-right: auto;
-    margin-left: auto;
-    width: auto;
-    background-image: url(images/model.webp);
-    background-size: cover;
-    background-position: center;
     height: 350px;
   }
   .head .content h1 {
@@ -1098,7 +1091,6 @@ img {
       )
       translateZ(150px);
   }
-  /* CONTACT */
   .contact-con .con-card {
     width: 128px;
     height: 200px;
