@@ -1049,22 +1049,14 @@ img {
   }
   .see {
     margin: 0 auto 24px auto;
-    pointer-events: none;
   }
   .collab {
     margin: 0 auto;
-    pointer-events: none;
   }
   .button:hover {
     pointer-events: none;
   }
   .button:hover::before {
-    pointer-events: none;
-  }
-  .see::before {
-    pointer-events: none;
-  }
-  .collab::before {
     pointer-events: none;
   }
   .contact-con {
