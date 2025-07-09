@@ -965,10 +965,10 @@ img {
   .head .frame:hover {
     pointer-events: none;
   }
-  .head .frame::before {
+  .frame::before {
     display: none;
   }
-  .head .frame::after {
+  .frame::after {
     display: none;
   }
 
