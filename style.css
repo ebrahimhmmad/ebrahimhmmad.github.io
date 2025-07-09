@@ -966,7 +966,7 @@ img {
     pointer-events: none;
   }
   .head .frame::before {
-    pointer-events: none;
+    display: none;
   }
   .head .frame::after {
     display: none;
