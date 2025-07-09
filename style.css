@@ -1040,7 +1040,6 @@ img {
   }
   .btns {
     flex-direction: column;
-    pointer-events: none;
   }
   .button {
     width: 90%;
@@ -1054,9 +1053,6 @@ img {
   }
   .collab {
     margin: 0 auto;
-    pointer-events: none;
-  }
-  .button:active {
     pointer-events: none;
   }
   .button:hover {
