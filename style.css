@@ -961,6 +961,11 @@ img {
     background-position: center;
     filter: grayscale(0%);
     -webkit-filter: grayscale(0%);
+  }
+  .frame {
+    pointer-events: none;
+  }
+  .frame:hover {
     pointer-events: none;
   }
   .frame::before {
@@ -969,7 +974,6 @@ img {
   .frame::after {
     display: none;
   }
-
   .head .content {
     margin-bottom: 40px;
     margin-right: 0px;
@@ -983,6 +987,7 @@ img {
     pointer-events: none;
   }
   .card::before {
+    display: none;
     pointer-events: none;
   }
   .card-content h3 {
@@ -1035,17 +1040,21 @@ img {
   }
   .btns {
     flex-direction: column;
+    pointer-events: none;
   }
   .button {
     width: 90%;
     height: 90%;
     text-align: center;
+    pointer-events: none;
   }
   .see {
     margin: 0 auto 24px auto;
+    pointer-events: none;
   }
   .collab {
     margin: 0 auto;
+    pointer-events: none;
   }
   .button:active {
     pointer-events: none;
@@ -1068,6 +1077,7 @@ img {
   .contact-con .con-card {
     width: 175px;
     height: 275px;
+    pointer-events: none;
   }
   .con-card svg {
     width: 64px;
@@ -1089,6 +1099,9 @@ img {
         calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
       )
       translateZ(150px);
+  }
+  .head {
+    padding: 0 16px;
   }
   .contact-con .con-card {
     width: 128px;
