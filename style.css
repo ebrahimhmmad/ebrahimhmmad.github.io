@@ -961,8 +961,6 @@ img {
     background-position: center;
     filter: grayscale(0%);
     -webkit-filter: grayscale(0%);
-  }
-  .head .frame:hover {
     pointer-events: none;
   }
   .frame::before {
@@ -981,6 +979,9 @@ img {
   .head .content h1 {
     text-align: center;
   }
+  .card {
+    pointer-events: none;
+  }
   .card::before {
     pointer-events: none;
   }
@@ -990,11 +991,9 @@ img {
   .contact-con .con-card {
     width: 250px;
     height: 350px;
-  }
-  .contact-con .con-card::before {
     pointer-events: none;
   }
-  .contact-con .con-card:hover::before {
+  .contact-con .con-card::before {
     pointer-events: none;
   }
   .con-card svg {
